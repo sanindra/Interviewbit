@@ -8,9 +8,8 @@ class Solution:
         for i in xrange(A/2):
             x = row[i]*(A-i)/(i+1)
             row[i+1], row[A-1-i] = x, x
-            print row
         return row
 
 if __name__ == '__main__':
     sol = Solution()
-    sol.getRow(3)
+    print sol.getRow(3)
