@@ -1,4 +1,6 @@
-class Solution:
+
+
+class Solution(object):
     # @param A : list of integers
     # @return a list of integers
     def maxset(self, A):
@@ -13,13 +15,13 @@ class Solution:
                 a.append(i)
             else:
                 self.populateDict(maxSum, a)
-                a = [i] if i>=0 else []
+                a = [i] if i >= 0 else []
                 maxSum = 0
-
-        if maxSum: self.populateDict(maxSum, a)
+        if maxSum:
+            self.populateDict(maxSum, a)
         m = max(self.l) if self.l else -1
         
-        return self.l[m] if m!=-1 else []
+        return self.l[m] if m != -1 else []
     
     def populateDict(self, maxSum, a):
         if maxSum in self.l:

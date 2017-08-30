@@ -1,11 +1,13 @@
-class Solution:
+
+
+class Solution(object):
     # @param A : tuple of integers
     # @return a strings
     def largestNumber(self, A):
         return ''.join(sorted(map(str, A), cmp=self.compare, reverse=True))
     
     def compare(self, x, y):
-        return int(x+y)-int(y+x)
+        return int(x + y) - int(y + x)
 
 
 if __name__ == '__main__':

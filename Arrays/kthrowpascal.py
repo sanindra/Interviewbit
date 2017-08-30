@@ -1,4 +1,6 @@
-class Solution:
+
+
+class Solution(object):
     # @param A : integer
     # @return a list of integers
     def getRow(self, A):
