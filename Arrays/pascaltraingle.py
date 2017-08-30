@@ -1,11 +1,13 @@
-class Solution:
+
+
+class Solution(object):
     # @param A : integer
     # @return a list of list of integers
     def generate(self, A):
         return [self.generateRows(i) for i in xrange(A)]
     
     def generateRows(self, n):
-        row = [0 for i in xrange(n+1)]
+        row = [0 for _ in xrange(n+1)]
         row[0], row[-1] = 1, 1
         
         for i in xrange(n/2):
