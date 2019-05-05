@@ -7,6 +7,8 @@ class Solution:
             c += (ord(k) - 64)*(26**i)
         return c
 
+    # @param A : integer
+    # @return a string
     def convertToTitle(self, A):
         alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
         col = ''
